@@ -442,6 +442,48 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-heading text-main">
+          Leave your contacts and we will call you back
+        </p>
+        <form class="modal-form" name="contacts_form">
+          <div class="form-field">
+            <label class="input-text" for="user-name">Name</label>
+            <input type="text" name="user-name" id="user-name" required />
+          </div>
+
+          <div class="form-field">
+            <label class="input-text" for="user-phone">Phone</label>
+            <input type="tel" name="user-phone" id="user-phone" required />
+          </div>
+
+          <div class="form-field">
+            <label class="input-text" for="user-email">Email</label>
+            <input type="email" name="user-email" id="user-email" required />
+          </div>
+
+          <div class="form-field">
+            <label class="input-text" for="user-comment">Comment</label>
+            <input
+              type="textarea"
+              name="comment"
+              id="user-comment"
+              placeholder="Text input"
+            />
+          </div>
+
+          <textarea name="" id="" rows="5"></textarea>
+
+          <div class="form-field">
+            <label class="input-text" for="checkbox-privacy"></label>
+            <input type="checkbox" id="checkbox-privacy" required />
+            <span class="checkbox-text input-text">
+              I accept the terms and conditions of the
+              <a class="checkbox-link" href="">Privacy Policy</a>
+            </span>
+          </div>
+
+          <button class="button primary" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
