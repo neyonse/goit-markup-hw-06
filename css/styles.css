@@ -679,7 +679,7 @@ footer .input-field {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
-  padding: 24px;
+  padding: 72px 24px 24px;
 
   background-color: var(--modal-background-color);
   border-radius: var(--border-radius);
@@ -694,10 +694,12 @@ footer .input-field {
 }
 
 .modal-button-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   display: flex;
   width: 24px;
   height: 24px;
-  margin-left: auto;
   justify-content: center;
   align-items: center;
 
@@ -725,7 +727,6 @@ footer .input-field {
 }
 
 .modal-heading {
-  margin-top: 24px;
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -733,6 +734,7 @@ footer .input-field {
 }
 
 .input-wrap {
+  position: relative;
   display: block;
   margin-bottom: 8px;
 }
@@ -744,10 +746,6 @@ footer .input-field {
   font-size: 12px;
   line-height: 1.33;
   color: var(--input-text-color);
-}
-
-.input-box {
-  position: relative;
 }
 
 .input-field {
@@ -773,7 +771,7 @@ footer .input-field {
   fill: var(--accent-color);
 }
 
-.input-box::placeholder {
+.input-field::placeholder {
   font-size: 12px;
   line-height: 1.33;
   color: rgba(117, 117, 117, 0.5);
@@ -785,17 +783,15 @@ footer .input-field {
 
 .input-icon {
   position: absolute;
-  top: 50%;
+  bottom: 8px;
   left: 16px;
-  transform: translateY(-50%);
-  fill: var(--text-title-color);
 
+  fill: var(--text-title-color);
   transition: fill var(--hover-transition);
 }
 
-textarea {
+.modal-textarea {
   resize: none;
-  width: 100%;
   height: 120px;
 }
 
